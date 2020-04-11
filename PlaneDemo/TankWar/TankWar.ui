@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TankWarClass</class>
+ <widget class="QWidget" name="TankWarClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TankWar</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="m_stack_widget">
+     <widget class="PlayerNumsSelectWidget" name="m_start1_widget"/>
+     <widget class="StageWidget" name="m_start2_widget"/>
+     <widget class="MainScene" name="m_main_scene"/>
+     <widget class="GameOverWidget" name="m_over_widget"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>PlayerNumsSelectWidget</class>
+   <extends>QWidget</extends>
+   <header>PlayerNumsSelectWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StageWidget</class>
+   <extends>QWidget</extends>
+   <header>StageWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GameOverWidget</class>
+   <extends>QWidget</extends>
+   <header>GameOverWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MainScene</class>
+   <extends>QWidget</extends>
+   <header location="global">MainScene.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
